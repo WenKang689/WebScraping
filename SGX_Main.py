@@ -54,8 +54,15 @@ def get_save_path(file_name):
     return os.path.join(dir, file_name)
 
 def dwl_data(dates):
+    base_date = datetime.strptime("2021-01-01","%Y-%m-%d")
+    base_index = 4803
 
+    if len(dates) == 1:
+        date = dates
 
+    elif len(dates) > 1:
+        for date in dates:
+        
 
 
 #---Main---
