@@ -41,11 +41,11 @@ logging.getLogger().addHandler(handler)
 
 # Get save path for each file type
 def get_save_path(file_name):
-    if file_name.startswith("WEBPXTICK_DT") and file_name.endswith(".zip"):
+    if file_name == ("WEBPXTICK_DT.zip"):
         return os.path.join(folder_directory["WEBPXTICK_DT"], file_name)
     elif file_name == "TickData_structure.dat":
         return os.path.join(folder_directory["TickData_structure"], file_name)
-    elif file_name.startswith("TC_") and file_name.endswith(".txt"):
+    elif file_name == ("TC.txt"):
         return os.path.join(folder_directory["TC"], file_name)
     elif file_name == "TC_structure.dat":
         return os.path.join(folder_directory["TC_structure"], file_name)
@@ -75,8 +75,23 @@ def index_calc(dates):
         return(index_list[0])
     return(index_list)
 
-def dwl_data():
-    link = config.get("Settings","SGX_URL",fallback="https://www.sgx.com/research-education/derivatives")
+#Download data
+def dwl_data(indices):
+
+    file_name = ["WEBPXTICK_DT.zip","TickData_structure.dat","TC.txt","TC_structure.dat"]
+    link = config.get("Settings","SGX_URL",fallback="https://links.sgx.com/1.0.0/derivatives-historical/")
+    for index in indices:
+        for file in file_name:
+            base_url = f"{link}{index}/{file}"
+            response = requests.get(base_url)
+            if response == 200:
+                path = get_save_path(file)
+                with open(path,"wb") as w:
+                    w.write(response.content)
+                logging.info(f"Downloaded")
+            else:
+                print(f"Download failed")
+
 
 #---Main---
 
