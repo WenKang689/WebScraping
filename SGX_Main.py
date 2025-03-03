@@ -11,9 +11,9 @@ config = configparser.ConfigParser()
 config.read(config_file)
 
 #Read settings from config.ini
-dir = config.get("Settings", "download_directory", fallback="./downloads")
-retry_duration = config.getint("Settings", "retry_duration", fallback=3)
-log_file = config.get("Settings", "log_file", fallback="download.log")
+dir = config.get("Settings", "download_directory", fallback = "./downloads")
+retry_duration = config.getint("Settings", "retry_duration", fallback = 3)
+log_file = config.get("Settings", "log_file", fallback = "download.log")
 
 #Name different folders for each data type
 folder_directory = {
@@ -39,8 +39,6 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.INFO)
 logging.getLogger().addHandler(handler)
 
-link = "https://www.sgx.com/research-education/derivatives"
-
 # Get save path for each file type
 def get_save_path(file_name):
     if file_name.startswith("WEBPXTICK_DT") and file_name.endswith(".zip"):
@@ -53,17 +51,32 @@ def get_save_path(file_name):
         return os.path.join(folder_directory["TC_structure"], file_name)
     return os.path.join(dir, file_name)
 
-def dwl_data(dates):
-    base_date = datetime.strptime("2021-01-01","%Y-%m-%d")
-    base_index = 4803
+#Calculate the corresponding index
+def index_calc(dates):
+    base_date = datetime.strptime(config.get("Settings", "base_date", fallback = "2021-01-01"),"%Y-%m-%d")
+    base_index = int(config.get("Settings","base_index",fallback = "4803"))
 
-    if len(dates) == 1:
-        date = dates
+    date_now = base_date
+    index_now = base_index
 
-    elif len(dates) > 1:
-        for date in dates:
+    index_list = []
+    for date in dates:
+        if date < base_date:
+            index_list.append(None)
+            print(f"Warning: {date.strftime('%Y-%m-%d')} is before base date ({base_date.strftime('%Y-%m-%d')}).")
+            continue
         
+        while date_now < date:
+            if date_now.weekday() < 5:
+                index_now += 1
+            date_now += timedelta(days = 1)
+        index_list.append(index_now)
+    if len(dates) == 1:
+        return(index_list[0])
+    return(index_list)
 
+def dwl_data():
+    link = config.get("Settings","SGX_URL",fallback="https://www.sgx.com/research-education/derivatives")
 
 #---Main---
 
@@ -94,4 +107,5 @@ elif arg.start:
 else:
     dates.append(datetime.today())
 
-dwl_data(dates)
+indices = index_calc(dates)
+dwl_data(indices)
