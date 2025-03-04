@@ -64,6 +64,7 @@ def index_calc(dates):
 def dwl_data(indices):
     file_name = ["WEBPXTICK_DT.zip","TickData_structure.dat","TC.txt","TC_structure.dat"]
     link = config.get("Settings","SGX_URL",fallback="https://links.sgx.com/1.0.0/derivatives-historical/")
+    failed_dwl = []
 
     for index in indices:
         for file in file_name:
@@ -81,32 +82,36 @@ def dwl_data(indices):
                         w.write(response.content)
                     logging.info(f"Downloaded: {os.path.basename(file)} (Index: {index})")
                 else:
-                    dwl_retry(index,file)
+                    failed_dwl.append((index,file))
                     logging.warning(f"Download failed for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
             except requests.RequestException as e:
-                dwl_retry(index,file)
+                failed_dwl.append((index,file))
                 logging.error(f"Error downloading {file} for index {index}: {e}")
+    
+    if failed_dwl:
+        logging.info(f"Retrying failed download(s) after {retry_duration} hours.")
+        time.sleep(retry_duration * 3600)   
+
+        for r_index,r_file in failed_dwl:
+            dwl_retry(r_index,r_file)
 
 def dwl_retry(index,file):
     link = config.get("Settings","SGX_URL",fallback="https://links.sgx.com/1.0.0/derivatives-historical/")
-    logging.info(f"Retrying failed downloads after {retry_duration} hours...")
-    time.sleep(retry_duration * 3600)    
+    logging.info(f"Retrying failed download(s)")
+    base_url = f"{link}{index}/{file}"
+    path = get_save_path(index)
+    save_path = os.path.join(path,file)
 
-    for index, file in fail_dwl:
-        base_url = f"{link}{index}/{file}"
-        path = get_save_path(index)
-        save_path = os.path.join(path,file)
-
-        try:
-            response = requests.get(base_url)
-            if response.status_code == 200:
-                with open(save_path, "wb") as w:
-                    w.write(response.content)
-                logging.info(f"Download retry successful: {os.path.basename(file)} (Index: {index})")
-            else:
-                logging.warning(f"Download retry failed for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
-        except requests.RequestException as e:
-            logging.error(f"Download retry error: {file} for index {index}: {e}")
+    try:
+        response = requests.get(base_url)
+        if response.status_code == 200:
+            with open(save_path, "wb") as w:
+                w.write(response.content)
+            logging.info(f"Download retry successful: {os.path.basename(file)} (Index: {index})")
+        else:
+            logging.warning(f"Download retry failed for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
+    except requests.RequestException as e:
+        logging.error(f"Download retry error: {file} for index {index}: {e}")
 
 #---Main---
 
