@@ -96,7 +96,11 @@ def index_calc(dates):
     index_list = []
     for date in dates:
         if date < base_date:
-            logging.info(f"Warning: {date.strftime('%Y-%m-%d')} is before base date ({base_date.strftime('%Y-%m-%d')}).")
+            logging.info(f"{date.strftime('%Y-%m-%d')} is before base date {base_date.strftime('%Y-%m-%d')}.")
+            continue
+
+        if date.date() > datetime.today().date():
+            logging.info(f"{date.strftime('%Y-%m-%d')} is after today's date {datetime.today().strftime('%Y-%m-%d')}.")
             continue
 
         if date.weekday() >= 5:  # Saturday (5) or Sunday (6)
