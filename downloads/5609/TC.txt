@@ -1,0 +1,4 @@
+Commodity	Contract_Type	Delivery_Month	Delivery_Year	Strike_Price	Business_Date	Match_Time	Price_Indicator	Price	Message_Code	Amend_Code	Volume
+CWF	F	G	2024	0000000	20240205	163900	 	0000016200	Y	D	00005
+CWF	F	G	2024	0000000	20240205	163900	 	0000016200	Y	D	00005
+FEF	F	K	2024	0000000	20240205	093947	 	0000012500	Y	D	00050

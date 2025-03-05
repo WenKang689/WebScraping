@@ -5,6 +5,7 @@ import logging
 import requests
 from datetime import datetime, timedelta
 import time
+import sys
 
 #Load configurations in config.ini
 config_file = "config.ini"
@@ -37,11 +38,55 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.INFO)
 logging.getLogger().addHandler(handler)
 
-# Create folder and get save path for each index
-def get_save_path(index):
-    index_folder = os.path.join(dir,str(index))
-    os.makedirs(index_folder, exist_ok=True)
-    return index_folder
+def get_date_range(arg):
+    # Validate and calculate date range for download
+    dates = []
+    today = datetime.today()
+
+    if arg.date and (arg.start or arg.end):
+        logging.error("Cannot use --date with --start or --end. You must specify one of: --date, --start, or --start with --end.")
+        sys.exit(1)
+
+    if arg.start and arg.end:
+        start_date = validate_date(arg.start)
+        end_date = validate_date(arg.end)
+        if start_date > end_date:
+            logging.error("--start date cannot be later than --end date.")
+            sys.exit(1)
+        for i in range((end_date - start_date).days + 1):
+            dates.append(start_date + timedelta(days=i))
+    elif arg.start:
+        start_date = validate_date(arg.start)
+        for i in range((today - start_date).days + 1):
+            dates.append(start_date + timedelta(days=i))
+    elif arg.date:
+        dates.append(validate_date(arg.date))
+    else:
+        dates.append(validate_date(str(today.date())))  # Extract only the date part
+
+
+    return dates
+
+# Validate date format
+def validate_date(date):
+    try:
+        return datetime.strptime(date, "%Y-%m-%d")
+    except ValueError:
+        logging.error(f"Invalid date format: {date}. Must follow YYYY-MM-DD.")
+        sys.exit(1)
+
+#Validate file name
+def validate_file(arg):
+    invalid = []
+    if arg.file:
+        for i in arg.file:
+            if i not in files:
+                invalid.append(i)
+        if invalid:
+            logging.error(f"Invalid file(s): {', '.join(invalid)}. Available files: {', '.join(files)}")
+            sys.exit(1)
+        return arg.file
+    return files
 
 #Calculate the corresponding index
 def index_calc(dates):
@@ -51,7 +96,11 @@ def index_calc(dates):
     index_list = []
     for date in dates:
         if date < base_date:
-            logging.warning(f"Warning: {date.strftime('%Y-%m-%d')} is before base date ({base_date.strftime('%Y-%m-%d')}).")
+            logging.info(f"Warning: {date.strftime('%Y-%m-%d')} is before base date ({base_date.strftime('%Y-%m-%d')}).")
+            continue
+
+        if date.weekday() >= 5:  # Saturday (5) or Sunday (6)
+            logging.info(f"No data available for weekends: {date.strftime('%Y-%m-%d')}.")
             continue
         
         while date_now < date:
@@ -78,7 +127,6 @@ def dwl_data(indices,file_name):
                 continue
 
             try:
-                logging.info(f"Requesting download file {file} (Index: {index})")
                 response = requests.get(base_url)
                 if response.status_code == 200:
                     with open(save_path,"wb") as w:
@@ -93,6 +141,12 @@ def dwl_data(indices,file_name):
     
     if failed_dwl:
         dwl_retry(failed_dwl)
+
+# Create folder and get save path for each index
+def get_save_path(index):
+    index_folder = os.path.join(dir,str(index))
+    os.makedirs(index_folder, exist_ok=True)
+    return index_folder
 
 def dwl_retry(failed_dwl):
     logging.info(f"Retrying failed download(s)")
@@ -140,28 +194,7 @@ arg_parser.add_argument("--file", nargs="+")
 
 arg = arg_parser.parse_args()
 
-# Calculate date range for download
-dates = []
-
-if arg.file:
-    file = arg.file
-else:
-    file = files
-
-if arg.date:
-    dates.append(datetime.strptime(arg.date, "%Y-%m-%d"))
-elif arg.start and arg.end:
-    start_date = datetime.strptime(arg.start, "%Y-%m-%d")
-    end_date = datetime.strptime(arg.end, "%Y-%m-%d")
-    for i in range((end_date - start_date).days + 1):
-        dates.append(start_date + timedelta(days=i))
-elif arg.start:
-    start_date = datetime.strptime(arg.start, "%Y-%m-%d")
-    for i in range((datetime.today() - start_date).days + 1):
-        dates.append(start_date + timedelta(days=i))
-else:
-    dates.append(datetime.today())
-
+dates = get_date_range(arg)
+file = validate_file(arg)
 indices = index_calc(dates)
-
 dwl_data(indices,file)

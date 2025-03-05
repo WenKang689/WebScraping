@@ -46,3 +46,661 @@
 2025-03-05 10:13:19,652 - INFO - Initializing download for file TC_structure.dat (Index: 5461)
 2025-03-05 10:13:19,653 - INFO - Requesting download file TC_structure.dat (Index: 5461)
 2025-03-05 10:13:19,743 - INFO - Downloaded: TC_structure.dat (Index: 5461)
+2025-03-05 10:44:25,814 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5624)
+2025-03-05 10:44:25,814 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5624)
+2025-03-05 10:44:47,836 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5624)
+2025-03-05 10:44:47,836 - INFO - Initializing download for file TC.txt (Index: 5624)
+2025-03-05 10:44:47,836 - INFO - Requesting download file TC.txt (Index: 5624)
+2025-03-05 10:44:48,042 - INFO - Downloaded: TC.txt (Index: 5624)
+2025-03-05 10:46:15,915 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5607)
+2025-03-05 10:46:17,276 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5607)
+2025-03-05 10:46:25,840 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5607)
+2025-03-05 10:46:25,840 - INFO - Initializing download for file TickData_structure.dat (Index: 5607)
+2025-03-05 10:46:25,840 - INFO - Requesting download file TickData_structure.dat (Index: 5607)
+2025-03-05 10:46:26,278 - INFO - Downloaded: TickData_structure.dat (Index: 5607)
+2025-03-05 10:46:26,278 - INFO - Initializing download for file TC.txt (Index: 5607)
+2025-03-05 10:46:26,286 - INFO - Requesting download file TC.txt (Index: 5607)
+2025-03-05 10:46:26,413 - INFO - Downloaded: TC.txt (Index: 5607)
+2025-03-05 10:46:26,413 - INFO - Initializing download for file TC_structure.dat (Index: 5607)
+2025-03-05 10:46:26,413 - INFO - Requesting download file TC_structure.dat (Index: 5607)
+2025-03-05 10:46:26,616 - INFO - Downloaded: TC_structure.dat (Index: 5607)
+2025-03-05 10:47:18,147 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5607)
+2025-03-05 10:47:18,147 - INFO - File WEBPXTICK_DT.zip (Index: 5607) already exists.
+2025-03-05 10:47:18,147 - INFO - Initializing download for file TickData_structure.dat (Index: 5607)
+2025-03-05 10:47:18,147 - INFO - File TickData_structure.dat (Index: 5607) already exists.
+2025-03-05 10:47:18,147 - INFO - Initializing download for file TC.txt (Index: 5607)
+2025-03-05 10:47:18,147 - INFO - File TC.txt (Index: 5607) already exists.
+2025-03-05 10:47:18,147 - INFO - Initializing download for file TC_structure.dat (Index: 5607)
+2025-03-05 10:47:18,147 - INFO - File TC_structure.dat (Index: 5607) already exists.
+2025-03-05 10:47:18,147 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5608)
+2025-03-05 10:47:18,155 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5608)
+2025-03-05 10:47:50,643 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5608)
+2025-03-05 10:47:50,659 - INFO - Initializing download for file TickData_structure.dat (Index: 5608)
+2025-03-05 10:47:50,659 - INFO - Requesting download file TickData_structure.dat (Index: 5608)
+2025-03-05 10:47:50,992 - INFO - Downloaded: TickData_structure.dat (Index: 5608)
+2025-03-05 10:47:50,992 - INFO - Initializing download for file TC.txt (Index: 5608)
+2025-03-05 10:47:50,994 - INFO - Requesting download file TC.txt (Index: 5608)
+2025-03-05 10:47:51,145 - INFO - Downloaded: TC.txt (Index: 5608)
+2025-03-05 10:47:51,145 - INFO - Initializing download for file TC_structure.dat (Index: 5608)
+2025-03-05 10:47:51,145 - INFO - Requesting download file TC_structure.dat (Index: 5608)
+2025-03-05 10:47:51,397 - INFO - Downloaded: TC_structure.dat (Index: 5608)
+2025-03-05 10:47:51,397 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5609)
+2025-03-05 10:47:51,397 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5609)
+2025-03-05 10:48:25,203 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5609)
+2025-03-05 10:48:25,205 - INFO - Initializing download for file TickData_structure.dat (Index: 5609)
+2025-03-05 10:48:25,205 - INFO - Requesting download file TickData_structure.dat (Index: 5609)
+2025-03-05 10:48:25,573 - INFO - Downloaded: TickData_structure.dat (Index: 5609)
+2025-03-05 10:48:25,578 - INFO - Initializing download for file TC.txt (Index: 5609)
+2025-03-05 10:48:25,578 - INFO - Requesting download file TC.txt (Index: 5609)
+2025-03-05 10:48:25,708 - INFO - Downloaded: TC.txt (Index: 5609)
+2025-03-05 10:48:25,708 - INFO - Initializing download for file TC_structure.dat (Index: 5609)
+2025-03-05 10:48:25,716 - INFO - Requesting download file TC_structure.dat (Index: 5609)
+2025-03-05 10:48:25,836 - INFO - Downloaded: TC_structure.dat (Index: 5609)
+2025-03-05 10:48:25,836 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5609)
+2025-03-05 10:48:25,836 - INFO - File WEBPXTICK_DT.zip (Index: 5609) already exists.
+2025-03-05 10:48:25,839 - INFO - Initializing download for file TickData_structure.dat (Index: 5609)
+2025-03-05 10:48:25,839 - INFO - File TickData_structure.dat (Index: 5609) already exists.
+2025-03-05 10:48:25,840 - INFO - Initializing download for file TC.txt (Index: 5609)
+2025-03-05 10:48:25,840 - INFO - File TC.txt (Index: 5609) already exists.
+2025-03-05 10:48:25,841 - INFO - Initializing download for file TC_structure.dat (Index: 5609)
+2025-03-05 10:48:25,841 - INFO - File TC_structure.dat (Index: 5609) already exists.
+2025-03-05 10:48:25,841 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5609)
+2025-03-05 10:48:25,841 - INFO - File WEBPXTICK_DT.zip (Index: 5609) already exists.
+2025-03-05 10:48:25,841 - INFO - Initializing download for file TickData_structure.dat (Index: 5609)
+2025-03-05 10:48:25,841 - INFO - File TickData_structure.dat (Index: 5609) already exists.
+2025-03-05 10:48:25,844 - INFO - Initializing download for file TC.txt (Index: 5609)
+2025-03-05 10:48:25,844 - INFO - File TC.txt (Index: 5609) already exists.
+2025-03-05 10:48:25,846 - INFO - Initializing download for file TC_structure.dat (Index: 5609)
+2025-03-05 10:48:25,846 - INFO - File TC_structure.dat (Index: 5609) already exists.
+2025-03-05 10:48:25,846 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5610)
+2025-03-05 10:48:25,846 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5610)
+2025-03-05 10:48:51,212 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5610)
+2025-03-05 10:48:51,212 - INFO - Initializing download for file TickData_structure.dat (Index: 5610)
+2025-03-05 10:48:51,212 - INFO - Requesting download file TickData_structure.dat (Index: 5610)
+2025-03-05 10:48:51,518 - INFO - Downloaded: TickData_structure.dat (Index: 5610)
+2025-03-05 10:48:51,518 - INFO - Initializing download for file TC.txt (Index: 5610)
+2025-03-05 10:48:51,518 - INFO - Requesting download file TC.txt (Index: 5610)
+2025-03-05 10:48:51,661 - INFO - Downloaded: TC.txt (Index: 5610)
+2025-03-05 10:48:51,661 - INFO - Initializing download for file TC_structure.dat (Index: 5610)
+2025-03-05 10:48:51,661 - INFO - Requesting download file TC_structure.dat (Index: 5610)
+2025-03-05 10:48:52,001 - INFO - Downloaded: TC_structure.dat (Index: 5610)
+2025-03-05 10:48:52,001 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5611)
+2025-03-05 10:48:52,001 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5611)
+2025-03-05 10:49:07,458 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5611)
+2025-03-05 10:49:07,458 - INFO - Initializing download for file TickData_structure.dat (Index: 5611)
+2025-03-05 10:49:07,458 - INFO - Requesting download file TickData_structure.dat (Index: 5611)
+2025-03-05 10:49:07,880 - INFO - Downloaded: TickData_structure.dat (Index: 5611)
+2025-03-05 10:49:07,880 - INFO - Initializing download for file TC.txt (Index: 5611)
+2025-03-05 10:49:07,880 - INFO - Requesting download file TC.txt (Index: 5611)
+2025-03-05 10:49:08,048 - INFO - Downloaded: TC.txt (Index: 5611)
+2025-03-05 10:49:08,048 - INFO - Initializing download for file TC_structure.dat (Index: 5611)
+2025-03-05 10:49:08,048 - INFO - Requesting download file TC_structure.dat (Index: 5611)
+2025-03-05 10:49:08,313 - INFO - Downloaded: TC_structure.dat (Index: 5611)
+2025-03-05 10:49:08,313 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5612)
+2025-03-05 10:49:08,318 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5612)
+2025-03-05 10:49:24,610 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5612)
+2025-03-05 10:49:24,610 - INFO - Initializing download for file TickData_structure.dat (Index: 5612)
+2025-03-05 10:49:24,610 - INFO - Requesting download file TickData_structure.dat (Index: 5612)
+2025-03-05 10:49:24,796 - INFO - Downloaded: TickData_structure.dat (Index: 5612)
+2025-03-05 10:49:24,796 - INFO - Initializing download for file TC.txt (Index: 5612)
+2025-03-05 10:49:24,801 - INFO - Requesting download file TC.txt (Index: 5612)
+2025-03-05 10:49:24,944 - INFO - Downloaded: TC.txt (Index: 5612)
+2025-03-05 10:49:24,944 - INFO - Initializing download for file TC_structure.dat (Index: 5612)
+2025-03-05 10:49:24,944 - INFO - Requesting download file TC_structure.dat (Index: 5612)
+2025-03-05 10:49:25,085 - INFO - Downloaded: TC_structure.dat (Index: 5612)
+2025-03-05 10:49:25,085 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5613)
+2025-03-05 10:49:25,087 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5613)
+2025-03-05 10:49:36,819 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5613)
+2025-03-05 10:49:36,819 - INFO - Initializing download for file TickData_structure.dat (Index: 5613)
+2025-03-05 10:49:36,819 - INFO - Requesting download file TickData_structure.dat (Index: 5613)
+2025-03-05 10:49:36,992 - INFO - Downloaded: TickData_structure.dat (Index: 5613)
+2025-03-05 10:49:36,992 - INFO - Initializing download for file TC.txt (Index: 5613)
+2025-03-05 10:49:36,992 - INFO - Requesting download file TC.txt (Index: 5613)
+2025-03-05 10:49:37,127 - INFO - Downloaded: TC.txt (Index: 5613)
+2025-03-05 10:49:37,127 - INFO - Initializing download for file TC_structure.dat (Index: 5613)
+2025-03-05 10:49:37,130 - INFO - Requesting download file TC_structure.dat (Index: 5613)
+2025-03-05 10:49:37,386 - INFO - Downloaded: TC_structure.dat (Index: 5613)
+2025-03-05 10:49:37,386 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5614)
+2025-03-05 10:49:37,492 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5614)
+2025-03-05 10:49:48,269 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5614)
+2025-03-05 10:49:48,269 - INFO - Initializing download for file TickData_structure.dat (Index: 5614)
+2025-03-05 10:49:48,269 - INFO - Requesting download file TickData_structure.dat (Index: 5614)
+2025-03-05 10:49:48,679 - INFO - Downloaded: TickData_structure.dat (Index: 5614)
+2025-03-05 10:49:48,679 - INFO - Initializing download for file TC.txt (Index: 5614)
+2025-03-05 10:49:48,687 - INFO - Requesting download file TC.txt (Index: 5614)
+2025-03-05 10:49:48,958 - INFO - Downloaded: TC.txt (Index: 5614)
+2025-03-05 10:49:48,958 - INFO - Initializing download for file TC_structure.dat (Index: 5614)
+2025-03-05 10:49:48,966 - INFO - Requesting download file TC_structure.dat (Index: 5614)
+2025-03-05 10:49:49,117 - INFO - Downloaded: TC_structure.dat (Index: 5614)
+2025-03-05 10:49:49,117 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5614)
+2025-03-05 10:49:49,117 - INFO - File WEBPXTICK_DT.zip (Index: 5614) already exists.
+2025-03-05 10:49:49,117 - INFO - Initializing download for file TickData_structure.dat (Index: 5614)
+2025-03-05 10:49:49,117 - INFO - File TickData_structure.dat (Index: 5614) already exists.
+2025-03-05 10:49:49,122 - INFO - Initializing download for file TC.txt (Index: 5614)
+2025-03-05 10:49:49,122 - INFO - File TC.txt (Index: 5614) already exists.
+2025-03-05 10:49:49,122 - INFO - Initializing download for file TC_structure.dat (Index: 5614)
+2025-03-05 10:49:49,124 - INFO - File TC_structure.dat (Index: 5614) already exists.
+2025-03-05 10:49:49,124 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5614)
+2025-03-05 10:49:49,124 - INFO - File WEBPXTICK_DT.zip (Index: 5614) already exists.
+2025-03-05 10:49:49,126 - INFO - Initializing download for file TickData_structure.dat (Index: 5614)
+2025-03-05 10:49:49,126 - INFO - File TickData_structure.dat (Index: 5614) already exists.
+2025-03-05 10:49:49,126 - INFO - Initializing download for file TC.txt (Index: 5614)
+2025-03-05 10:49:49,126 - INFO - File TC.txt (Index: 5614) already exists.
+2025-03-05 10:49:49,126 - INFO - Initializing download for file TC_structure.dat (Index: 5614)
+2025-03-05 10:49:49,126 - INFO - File TC_structure.dat (Index: 5614) already exists.
+2025-03-05 10:49:49,126 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5615)
+2025-03-05 10:49:49,126 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5615)
+2025-03-05 10:50:17,383 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5615)
+2025-03-05 10:50:17,383 - INFO - Initializing download for file TickData_structure.dat (Index: 5615)
+2025-03-05 10:50:17,396 - INFO - Requesting download file TickData_structure.dat (Index: 5615)
+2025-03-05 10:50:17,788 - INFO - Downloaded: TickData_structure.dat (Index: 5615)
+2025-03-05 10:50:17,788 - INFO - Initializing download for file TC.txt (Index: 5615)
+2025-03-05 10:50:17,790 - INFO - Requesting download file TC.txt (Index: 5615)
+2025-03-05 10:50:18,074 - INFO - Downloaded: TC.txt (Index: 5615)
+2025-03-05 10:50:18,074 - INFO - Initializing download for file TC_structure.dat (Index: 5615)
+2025-03-05 10:50:18,079 - INFO - Requesting download file TC_structure.dat (Index: 5615)
+2025-03-05 10:50:18,335 - INFO - Downloaded: TC_structure.dat (Index: 5615)
+2025-03-05 10:50:18,336 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5616)
+2025-03-05 10:50:18,337 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5616)
+2025-03-05 10:50:48,566 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5616)
+2025-03-05 10:50:48,566 - INFO - Initializing download for file TickData_structure.dat (Index: 5616)
+2025-03-05 10:50:48,566 - INFO - Requesting download file TickData_structure.dat (Index: 5616)
+2025-03-05 10:50:48,947 - INFO - Downloaded: TickData_structure.dat (Index: 5616)
+2025-03-05 10:50:48,947 - INFO - Initializing download for file TC.txt (Index: 5616)
+2025-03-05 10:50:48,957 - INFO - Requesting download file TC.txt (Index: 5616)
+2025-03-05 10:50:49,218 - INFO - Downloaded: TC.txt (Index: 5616)
+2025-03-05 10:50:49,218 - INFO - Initializing download for file TC_structure.dat (Index: 5616)
+2025-03-05 10:50:49,218 - INFO - Requesting download file TC_structure.dat (Index: 5616)
+2025-03-05 10:50:49,412 - INFO - Downloaded: TC_structure.dat (Index: 5616)
+2025-03-05 10:50:49,412 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5617)
+2025-03-05 10:50:49,414 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5617)
+2025-03-05 10:51:21,104 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5617)
+2025-03-05 10:51:21,104 - INFO - Initializing download for file TickData_structure.dat (Index: 5617)
+2025-03-05 10:51:21,107 - INFO - Requesting download file TickData_structure.dat (Index: 5617)
+2025-03-05 10:51:21,921 - INFO - Downloaded: TickData_structure.dat (Index: 5617)
+2025-03-05 10:51:21,921 - INFO - Initializing download for file TC.txt (Index: 5617)
+2025-03-05 10:51:21,925 - INFO - Requesting download file TC.txt (Index: 5617)
+2025-03-05 10:51:22,142 - INFO - Downloaded: TC.txt (Index: 5617)
+2025-03-05 10:51:22,142 - INFO - Initializing download for file TC_structure.dat (Index: 5617)
+2025-03-05 10:51:22,142 - INFO - Requesting download file TC_structure.dat (Index: 5617)
+2025-03-05 10:51:22,373 - INFO - Downloaded: TC_structure.dat (Index: 5617)
+2025-03-05 10:51:22,373 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5618)
+2025-03-05 10:51:22,374 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5618)
+2025-03-05 10:51:52,316 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5618)
+2025-03-05 10:51:52,316 - INFO - Initializing download for file TickData_structure.dat (Index: 5618)
+2025-03-05 10:51:52,316 - INFO - Requesting download file TickData_structure.dat (Index: 5618)
+2025-03-05 10:51:52,861 - INFO - Downloaded: TickData_structure.dat (Index: 5618)
+2025-03-05 10:51:52,861 - INFO - Initializing download for file TC.txt (Index: 5618)
+2025-03-05 10:51:52,861 - INFO - Requesting download file TC.txt (Index: 5618)
+2025-03-05 10:51:53,068 - INFO - Downloaded: TC.txt (Index: 5618)
+2025-03-05 10:51:53,068 - INFO - Initializing download for file TC_structure.dat (Index: 5618)
+2025-03-05 10:51:53,068 - INFO - Requesting download file TC_structure.dat (Index: 5618)
+2025-03-05 10:51:53,310 - INFO - Downloaded: TC_structure.dat (Index: 5618)
+2025-03-05 10:51:53,310 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5619)
+2025-03-05 10:51:53,310 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5619)
+2025-03-05 10:52:14,578 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5619)
+2025-03-05 10:52:14,578 - INFO - Initializing download for file TickData_structure.dat (Index: 5619)
+2025-03-05 10:52:14,578 - INFO - Requesting download file TickData_structure.dat (Index: 5619)
+2025-03-05 10:52:14,770 - INFO - Downloaded: TickData_structure.dat (Index: 5619)
+2025-03-05 10:52:14,770 - INFO - Initializing download for file TC.txt (Index: 5619)
+2025-03-05 10:52:14,770 - INFO - Requesting download file TC.txt (Index: 5619)
+2025-03-05 10:52:14,995 - INFO - Downloaded: TC.txt (Index: 5619)
+2025-03-05 10:52:14,995 - INFO - Initializing download for file TC_structure.dat (Index: 5619)
+2025-03-05 10:52:15,004 - INFO - Requesting download file TC_structure.dat (Index: 5619)
+2025-03-05 10:52:15,268 - INFO - Downloaded: TC_structure.dat (Index: 5619)
+2025-03-05 10:52:15,268 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5619)
+2025-03-05 10:52:15,268 - INFO - File WEBPXTICK_DT.zip (Index: 5619) already exists.
+2025-03-05 10:52:15,276 - INFO - Initializing download for file TickData_structure.dat (Index: 5619)
+2025-03-05 10:52:15,276 - INFO - File TickData_structure.dat (Index: 5619) already exists.
+2025-03-05 10:52:15,276 - INFO - Initializing download for file TC.txt (Index: 5619)
+2025-03-05 10:52:15,279 - INFO - File TC.txt (Index: 5619) already exists.
+2025-03-05 10:52:15,279 - INFO - Initializing download for file TC_structure.dat (Index: 5619)
+2025-03-05 10:52:15,279 - INFO - File TC_structure.dat (Index: 5619) already exists.
+2025-03-05 10:52:15,279 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5619)
+2025-03-05 10:52:15,279 - INFO - File WEBPXTICK_DT.zip (Index: 5619) already exists.
+2025-03-05 10:52:15,279 - INFO - Initializing download for file TickData_structure.dat (Index: 5619)
+2025-03-05 10:52:15,279 - INFO - File TickData_structure.dat (Index: 5619) already exists.
+2025-03-05 10:52:15,279 - INFO - Initializing download for file TC.txt (Index: 5619)
+2025-03-05 10:52:15,279 - INFO - File TC.txt (Index: 5619) already exists.
+2025-03-05 10:52:15,279 - INFO - Initializing download for file TC_structure.dat (Index: 5619)
+2025-03-05 10:52:15,279 - INFO - File TC_structure.dat (Index: 5619) already exists.
+2025-03-05 10:52:15,279 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5620)
+2025-03-05 10:52:15,285 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5620)
+2025-03-05 10:52:38,838 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5620)
+2025-03-05 10:52:38,838 - INFO - Initializing download for file TickData_structure.dat (Index: 5620)
+2025-03-05 10:52:38,840 - INFO - Requesting download file TickData_structure.dat (Index: 5620)
+2025-03-05 10:52:39,331 - INFO - Downloaded: TickData_structure.dat (Index: 5620)
+2025-03-05 10:52:39,331 - INFO - Initializing download for file TC.txt (Index: 5620)
+2025-03-05 10:52:39,331 - INFO - Requesting download file TC.txt (Index: 5620)
+2025-03-05 10:52:39,569 - INFO - Downloaded: TC.txt (Index: 5620)
+2025-03-05 10:52:39,569 - INFO - Initializing download for file TC_structure.dat (Index: 5620)
+2025-03-05 10:52:39,577 - INFO - Requesting download file TC_structure.dat (Index: 5620)
+2025-03-05 10:52:40,172 - INFO - Downloaded: TC_structure.dat (Index: 5620)
+2025-03-05 10:52:40,172 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5621)
+2025-03-05 10:52:40,172 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5621)
+2025-03-05 10:53:19,072 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5621)
+2025-03-05 10:53:19,072 - INFO - Initializing download for file TickData_structure.dat (Index: 5621)
+2025-03-05 10:53:19,072 - INFO - Requesting download file TickData_structure.dat (Index: 5621)
+2025-03-05 10:53:19,663 - INFO - Downloaded: TickData_structure.dat (Index: 5621)
+2025-03-05 10:53:19,663 - INFO - Initializing download for file TC.txt (Index: 5621)
+2025-03-05 10:53:19,663 - INFO - Requesting download file TC.txt (Index: 5621)
+2025-03-05 10:53:19,831 - INFO - Downloaded: TC.txt (Index: 5621)
+2025-03-05 10:53:19,831 - INFO - Initializing download for file TC_structure.dat (Index: 5621)
+2025-03-05 10:53:19,839 - INFO - Requesting download file TC_structure.dat (Index: 5621)
+2025-03-05 10:53:19,992 - INFO - Downloaded: TC_structure.dat (Index: 5621)
+2025-03-05 10:53:19,992 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5622)
+2025-03-05 10:53:20,036 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5622)
+2025-03-05 10:53:52,270 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5622)
+2025-03-05 10:53:52,271 - INFO - Initializing download for file TickData_structure.dat (Index: 5622)
+2025-03-05 10:53:52,271 - INFO - Requesting download file TickData_structure.dat (Index: 5622)
+2025-03-05 10:53:53,122 - INFO - Downloaded: TickData_structure.dat (Index: 5622)
+2025-03-05 10:53:53,122 - INFO - Initializing download for file TC.txt (Index: 5622)
+2025-03-05 10:53:53,125 - INFO - Requesting download file TC.txt (Index: 5622)
+2025-03-05 10:53:53,254 - INFO - Downloaded: TC.txt (Index: 5622)
+2025-03-05 10:53:53,254 - INFO - Initializing download for file TC_structure.dat (Index: 5622)
+2025-03-05 10:53:53,254 - INFO - Requesting download file TC_structure.dat (Index: 5622)
+2025-03-05 10:53:53,645 - INFO - Downloaded: TC_structure.dat (Index: 5622)
+2025-03-05 10:53:53,645 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5623)
+2025-03-05 10:53:53,645 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: 5623)
+2025-03-05 10:54:18,191 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5623)
+2025-03-05 10:54:18,200 - INFO - Initializing download for file TickData_structure.dat (Index: 5623)
+2025-03-05 10:54:18,200 - INFO - Requesting download file TickData_structure.dat (Index: 5623)
+2025-03-05 10:54:18,463 - INFO - Downloaded: TickData_structure.dat (Index: 5623)
+2025-03-05 10:54:18,463 - INFO - Initializing download for file TC.txt (Index: 5623)
+2025-03-05 10:54:18,463 - INFO - Requesting download file TC.txt (Index: 5623)
+2025-03-05 10:54:18,705 - INFO - Downloaded: TC.txt (Index: 5623)
+2025-03-05 10:54:18,705 - INFO - Initializing download for file TC_structure.dat (Index: 5623)
+2025-03-05 10:54:18,705 - INFO - Requesting download file TC_structure.dat (Index: 5623)
+2025-03-05 10:54:19,064 - INFO - Downloaded: TC_structure.dat (Index: 5623)
+2025-03-05 10:54:19,064 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5624)
+2025-03-05 10:54:19,080 - INFO - File WEBPXTICK_DT.zip (Index: 5624) already exists.
+2025-03-05 10:54:19,080 - INFO - Initializing download for file TickData_structure.dat (Index: 5624)
+2025-03-05 10:54:19,080 - INFO - Requesting download file TickData_structure.dat (Index: 5624)
+2025-03-05 10:54:19,271 - INFO - Downloaded: TickData_structure.dat (Index: 5624)
+2025-03-05 10:54:19,271 - INFO - Initializing download for file TC.txt (Index: 5624)
+2025-03-05 10:54:19,286 - INFO - File TC.txt (Index: 5624) already exists.
+2025-03-05 10:54:19,286 - INFO - Initializing download for file TC_structure.dat (Index: 5624)
+2025-03-05 10:54:19,286 - INFO - Requesting download file TC_structure.dat (Index: 5624)
+2025-03-05 10:54:19,641 - INFO - Downloaded: TC_structure.dat (Index: 5624)
+2025-03-05 10:54:19,641 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5624)
+2025-03-05 10:54:19,641 - INFO - File WEBPXTICK_DT.zip (Index: 5624) already exists.
+2025-03-05 10:54:19,641 - INFO - Initializing download for file TickData_structure.dat (Index: 5624)
+2025-03-05 10:54:19,641 - INFO - File TickData_structure.dat (Index: 5624) already exists.
+2025-03-05 10:54:19,641 - INFO - Initializing download for file TC.txt (Index: 5624)
+2025-03-05 10:54:19,652 - INFO - File TC.txt (Index: 5624) already exists.
+2025-03-05 10:54:19,652 - INFO - Initializing download for file TC_structure.dat (Index: 5624)
+2025-03-05 10:54:19,652 - INFO - File TC_structure.dat (Index: 5624) already exists.
+2025-03-05 10:54:19,652 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5624)
+2025-03-05 10:54:19,652 - INFO - File WEBPXTICK_DT.zip (Index: 5624) already exists.
+2025-03-05 10:54:19,652 - INFO - Initializing download for file TickData_structure.dat (Index: 5624)
+2025-03-05 10:54:19,652 - INFO - File TickData_structure.dat (Index: 5624) already exists.
+2025-03-05 10:54:19,652 - INFO - Initializing download for file TC.txt (Index: 5624)
+2025-03-05 10:54:19,657 - INFO - File TC.txt (Index: 5624) already exists.
+2025-03-05 10:54:19,657 - INFO - Initializing download for file TC_structure.dat (Index: 5624)
+2025-03-05 10:54:19,657 - INFO - File TC_structure.dat (Index: 5624) already exists.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-03.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-04.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-10.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-11.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-17.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-18.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-24.
+2025-03-05 11:04:40,756 - INFO - No data available for weekends: 2024-02-25.
+2025-03-05 11:04:40,756 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5607)
+2025-03-05 11:04:40,756 - INFO - File WEBPXTICK_DT.zip (Index: 5607) already exists.
+2025-03-05 11:04:40,759 - INFO - Initializing download for file TickData_structure.dat (Index: 5607)
+2025-03-05 11:04:40,759 - INFO - File TickData_structure.dat (Index: 5607) already exists.
+2025-03-05 11:04:40,759 - INFO - Initializing download for file TC.txt (Index: 5607)
+2025-03-05 11:04:40,759 - INFO - File TC.txt (Index: 5607) already exists.
+2025-03-05 11:04:40,759 - INFO - Initializing download for file TC_structure.dat (Index: 5607)
+2025-03-05 11:04:40,759 - INFO - File TC_structure.dat (Index: 5607) already exists.
+2025-03-05 11:04:40,759 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5608)
+2025-03-05 11:04:40,759 - INFO - File WEBPXTICK_DT.zip (Index: 5608) already exists.
+2025-03-05 11:04:40,759 - INFO - Initializing download for file TickData_structure.dat (Index: 5608)
+2025-03-05 11:04:40,759 - INFO - File TickData_structure.dat (Index: 5608) already exists.
+2025-03-05 11:04:40,759 - INFO - Initializing download for file TC.txt (Index: 5608)
+2025-03-05 11:04:40,759 - INFO - File TC.txt (Index: 5608) already exists.
+2025-03-05 11:04:40,767 - INFO - Initializing download for file TC_structure.dat (Index: 5608)
+2025-03-05 11:04:40,768 - INFO - File TC_structure.dat (Index: 5608) already exists.
+2025-03-05 11:04:40,768 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:40,768 - INFO - Requesting download file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:41,452 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:41,452 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:41,461 - INFO - Requesting download file TickData_structure.dat (Index: None)
+2025-03-05 11:04:43,466 - INFO - Downloaded: TickData_structure.dat (Index: None)
+2025-03-05 11:04:43,466 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:43,466 - INFO - Requesting download file TC.txt (Index: None)
+2025-03-05 11:04:44,703 - INFO - Downloaded: TC.txt (Index: None)
+2025-03-05 11:04:44,703 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,703 - INFO - Requesting download file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,879 - INFO - Downloaded: TC_structure.dat (Index: None)
+2025-03-05 11:04:44,879 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,882 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,882 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,882 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,882 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,882 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,882 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,882 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,882 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5609)
+2025-03-05 11:04:44,882 - INFO - File WEBPXTICK_DT.zip (Index: 5609) already exists.
+2025-03-05 11:04:44,882 - INFO - Initializing download for file TickData_structure.dat (Index: 5609)
+2025-03-05 11:04:44,889 - INFO - File TickData_structure.dat (Index: 5609) already exists.
+2025-03-05 11:04:44,889 - INFO - Initializing download for file TC.txt (Index: 5609)
+2025-03-05 11:04:44,889 - INFO - File TC.txt (Index: 5609) already exists.
+2025-03-05 11:04:44,889 - INFO - Initializing download for file TC_structure.dat (Index: 5609)
+2025-03-05 11:04:44,889 - INFO - File TC_structure.dat (Index: 5609) already exists.
+2025-03-05 11:04:44,889 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5610)
+2025-03-05 11:04:44,889 - INFO - File WEBPXTICK_DT.zip (Index: 5610) already exists.
+2025-03-05 11:04:44,892 - INFO - Initializing download for file TickData_structure.dat (Index: 5610)
+2025-03-05 11:04:44,892 - INFO - File TickData_structure.dat (Index: 5610) already exists.
+2025-03-05 11:04:44,892 - INFO - Initializing download for file TC.txt (Index: 5610)
+2025-03-05 11:04:44,892 - INFO - File TC.txt (Index: 5610) already exists.
+2025-03-05 11:04:44,892 - INFO - Initializing download for file TC_structure.dat (Index: 5610)
+2025-03-05 11:04:44,895 - INFO - File TC_structure.dat (Index: 5610) already exists.
+2025-03-05 11:04:44,895 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5611)
+2025-03-05 11:04:44,895 - INFO - File WEBPXTICK_DT.zip (Index: 5611) already exists.
+2025-03-05 11:04:44,895 - INFO - Initializing download for file TickData_structure.dat (Index: 5611)
+2025-03-05 11:04:44,896 - INFO - File TickData_structure.dat (Index: 5611) already exists.
+2025-03-05 11:04:44,896 - INFO - Initializing download for file TC.txt (Index: 5611)
+2025-03-05 11:04:44,896 - INFO - File TC.txt (Index: 5611) already exists.
+2025-03-05 11:04:44,898 - INFO - Initializing download for file TC_structure.dat (Index: 5611)
+2025-03-05 11:04:44,898 - INFO - File TC_structure.dat (Index: 5611) already exists.
+2025-03-05 11:04:44,898 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5612)
+2025-03-05 11:04:44,899 - INFO - File WEBPXTICK_DT.zip (Index: 5612) already exists.
+2025-03-05 11:04:44,899 - INFO - Initializing download for file TickData_structure.dat (Index: 5612)
+2025-03-05 11:04:44,900 - INFO - File TickData_structure.dat (Index: 5612) already exists.
+2025-03-05 11:04:44,900 - INFO - Initializing download for file TC.txt (Index: 5612)
+2025-03-05 11:04:44,900 - INFO - File TC.txt (Index: 5612) already exists.
+2025-03-05 11:04:44,900 - INFO - Initializing download for file TC_structure.dat (Index: 5612)
+2025-03-05 11:04:44,902 - INFO - File TC_structure.dat (Index: 5612) already exists.
+2025-03-05 11:04:44,902 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5613)
+2025-03-05 11:04:44,902 - INFO - File WEBPXTICK_DT.zip (Index: 5613) already exists.
+2025-03-05 11:04:44,902 - INFO - Initializing download for file TickData_structure.dat (Index: 5613)
+2025-03-05 11:04:44,902 - INFO - File TickData_structure.dat (Index: 5613) already exists.
+2025-03-05 11:04:44,902 - INFO - Initializing download for file TC.txt (Index: 5613)
+2025-03-05 11:04:44,902 - INFO - File TC.txt (Index: 5613) already exists.
+2025-03-05 11:04:44,902 - INFO - Initializing download for file TC_structure.dat (Index: 5613)
+2025-03-05 11:04:44,902 - INFO - File TC_structure.dat (Index: 5613) already exists.
+2025-03-05 11:04:44,902 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,907 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,907 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,907 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,908 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,908 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,908 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,910 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,910 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,910 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,912 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,912 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,912 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,912 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,912 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,914 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,914 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5614)
+2025-03-05 11:04:44,914 - INFO - File WEBPXTICK_DT.zip (Index: 5614) already exists.
+2025-03-05 11:04:44,914 - INFO - Initializing download for file TickData_structure.dat (Index: 5614)
+2025-03-05 11:04:44,916 - INFO - File TickData_structure.dat (Index: 5614) already exists.
+2025-03-05 11:04:44,916 - INFO - Initializing download for file TC.txt (Index: 5614)
+2025-03-05 11:04:44,917 - INFO - File TC.txt (Index: 5614) already exists.
+2025-03-05 11:04:44,917 - INFO - Initializing download for file TC_structure.dat (Index: 5614)
+2025-03-05 11:04:44,917 - INFO - File TC_structure.dat (Index: 5614) already exists.
+2025-03-05 11:04:44,917 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5615)
+2025-03-05 11:04:44,917 - INFO - File WEBPXTICK_DT.zip (Index: 5615) already exists.
+2025-03-05 11:04:44,917 - INFO - Initializing download for file TickData_structure.dat (Index: 5615)
+2025-03-05 11:04:44,917 - INFO - File TickData_structure.dat (Index: 5615) already exists.
+2025-03-05 11:04:44,917 - INFO - Initializing download for file TC.txt (Index: 5615)
+2025-03-05 11:04:44,917 - INFO - File TC.txt (Index: 5615) already exists.
+2025-03-05 11:04:44,917 - INFO - Initializing download for file TC_structure.dat (Index: 5615)
+2025-03-05 11:04:44,917 - INFO - File TC_structure.dat (Index: 5615) already exists.
+2025-03-05 11:04:44,917 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5616)
+2025-03-05 11:04:44,923 - INFO - File WEBPXTICK_DT.zip (Index: 5616) already exists.
+2025-03-05 11:04:44,923 - INFO - Initializing download for file TickData_structure.dat (Index: 5616)
+2025-03-05 11:04:44,923 - INFO - File TickData_structure.dat (Index: 5616) already exists.
+2025-03-05 11:04:44,923 - INFO - Initializing download for file TC.txt (Index: 5616)
+2025-03-05 11:04:44,924 - INFO - File TC.txt (Index: 5616) already exists.
+2025-03-05 11:04:44,924 - INFO - Initializing download for file TC_structure.dat (Index: 5616)
+2025-03-05 11:04:44,924 - INFO - File TC_structure.dat (Index: 5616) already exists.
+2025-03-05 11:04:44,924 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5617)
+2025-03-05 11:04:44,926 - INFO - File WEBPXTICK_DT.zip (Index: 5617) already exists.
+2025-03-05 11:04:44,926 - INFO - Initializing download for file TickData_structure.dat (Index: 5617)
+2025-03-05 11:04:44,927 - INFO - File TickData_structure.dat (Index: 5617) already exists.
+2025-03-05 11:04:44,927 - INFO - Initializing download for file TC.txt (Index: 5617)
+2025-03-05 11:04:44,927 - INFO - File TC.txt (Index: 5617) already exists.
+2025-03-05 11:04:44,927 - INFO - Initializing download for file TC_structure.dat (Index: 5617)
+2025-03-05 11:04:44,929 - INFO - File TC_structure.dat (Index: 5617) already exists.
+2025-03-05 11:04:44,929 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5618)
+2025-03-05 11:04:44,929 - INFO - File WEBPXTICK_DT.zip (Index: 5618) already exists.
+2025-03-05 11:04:44,929 - INFO - Initializing download for file TickData_structure.dat (Index: 5618)
+2025-03-05 11:04:44,929 - INFO - File TickData_structure.dat (Index: 5618) already exists.
+2025-03-05 11:04:44,929 - INFO - Initializing download for file TC.txt (Index: 5618)
+2025-03-05 11:04:44,929 - INFO - File TC.txt (Index: 5618) already exists.
+2025-03-05 11:04:44,929 - INFO - Initializing download for file TC_structure.dat (Index: 5618)
+2025-03-05 11:04:44,929 - INFO - File TC_structure.dat (Index: 5618) already exists.
+2025-03-05 11:04:44,929 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,934 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,934 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,934 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,934 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,934 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,934 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,937 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,937 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,937 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,937 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,937 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,937 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,940 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,940 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,940 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,940 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5619)
+2025-03-05 11:04:44,942 - INFO - File WEBPXTICK_DT.zip (Index: 5619) already exists.
+2025-03-05 11:04:44,942 - INFO - Initializing download for file TickData_structure.dat (Index: 5619)
+2025-03-05 11:04:44,942 - INFO - File TickData_structure.dat (Index: 5619) already exists.
+2025-03-05 11:04:44,942 - INFO - Initializing download for file TC.txt (Index: 5619)
+2025-03-05 11:04:44,942 - INFO - File TC.txt (Index: 5619) already exists.
+2025-03-05 11:04:44,942 - INFO - Initializing download for file TC_structure.dat (Index: 5619)
+2025-03-05 11:04:44,942 - INFO - File TC_structure.dat (Index: 5619) already exists.
+2025-03-05 11:04:44,942 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5620)
+2025-03-05 11:04:44,942 - INFO - File WEBPXTICK_DT.zip (Index: 5620) already exists.
+2025-03-05 11:04:44,942 - INFO - Initializing download for file TickData_structure.dat (Index: 5620)
+2025-03-05 11:04:44,942 - INFO - File TickData_structure.dat (Index: 5620) already exists.
+2025-03-05 11:04:44,942 - INFO - Initializing download for file TC.txt (Index: 5620)
+2025-03-05 11:04:44,947 - INFO - File TC.txt (Index: 5620) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file TC_structure.dat (Index: 5620)
+2025-03-05 11:04:44,947 - INFO - File TC_structure.dat (Index: 5620) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5621)
+2025-03-05 11:04:44,947 - INFO - File WEBPXTICK_DT.zip (Index: 5621) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file TickData_structure.dat (Index: 5621)
+2025-03-05 11:04:44,947 - INFO - File TickData_structure.dat (Index: 5621) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file TC.txt (Index: 5621)
+2025-03-05 11:04:44,947 - INFO - File TC.txt (Index: 5621) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file TC_structure.dat (Index: 5621)
+2025-03-05 11:04:44,947 - INFO - File TC_structure.dat (Index: 5621) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5622)
+2025-03-05 11:04:44,947 - INFO - File WEBPXTICK_DT.zip (Index: 5622) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file TickData_structure.dat (Index: 5622)
+2025-03-05 11:04:44,947 - INFO - File TickData_structure.dat (Index: 5622) already exists.
+2025-03-05 11:04:44,947 - INFO - Initializing download for file TC.txt (Index: 5622)
+2025-03-05 11:04:44,947 - INFO - File TC.txt (Index: 5622) already exists.
+2025-03-05 11:04:44,957 - INFO - Initializing download for file TC_structure.dat (Index: 5622)
+2025-03-05 11:04:44,957 - INFO - File TC_structure.dat (Index: 5622) already exists.
+2025-03-05 11:04:44,957 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5623)
+2025-03-05 11:04:44,958 - INFO - File WEBPXTICK_DT.zip (Index: 5623) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TickData_structure.dat (Index: 5623)
+2025-03-05 11:04:44,958 - INFO - File TickData_structure.dat (Index: 5623) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TC.txt (Index: 5623)
+2025-03-05 11:04:44,958 - INFO - File TC.txt (Index: 5623) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TC_structure.dat (Index: 5623)
+2025-03-05 11:04:44,958 - INFO - File TC_structure.dat (Index: 5623) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,958 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,958 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,958 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,958 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: None)
+2025-03-05 11:04:44,958 - INFO - File WEBPXTICK_DT.zip (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TickData_structure.dat (Index: None)
+2025-03-05 11:04:44,958 - INFO - File TickData_structure.dat (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TC.txt (Index: None)
+2025-03-05 11:04:44,958 - INFO - File TC.txt (Index: None) already exists.
+2025-03-05 11:04:44,958 - INFO - Initializing download for file TC_structure.dat (Index: None)
+2025-03-05 11:04:44,958 - INFO - File TC_structure.dat (Index: None) already exists.
+2025-03-05 12:01:59,545 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5889)
+2025-03-05 12:01:59,545 - INFO - File WEBPXTICK_DT.zip (Index: 5889) already exists.
+2025-03-05 12:01:59,545 - INFO - Initializing download for file TickData_structure.dat (Index: 5889)
+2025-03-05 12:01:59,548 - INFO - File TickData_structure.dat (Index: 5889) already exists.
+2025-03-05 12:01:59,548 - INFO - Initializing download for file TC.txt (Index: 5889)
+2025-03-05 12:01:59,548 - INFO - File TC.txt (Index: 5889) already exists.
+2025-03-05 12:01:59,548 - INFO - Initializing download for file TC_structure.dat (Index: 5889)
+2025-03-05 12:01:59,551 - INFO - File TC_structure.dat (Index: 5889) already exists.
+2025-03-05 12:01:59,551 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5890)
+2025-03-05 12:02:11,170 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5890)
+2025-03-05 12:02:11,170 - INFO - Initializing download for file TickData_structure.dat (Index: 5890)
+2025-03-05 12:02:11,581 - INFO - Downloaded: TickData_structure.dat (Index: 5890)
+2025-03-05 12:02:11,581 - INFO - Initializing download for file TC.txt (Index: 5890)
+2025-03-05 12:02:11,758 - INFO - Downloaded: TC.txt (Index: 5890)
+2025-03-05 12:02:11,762 - INFO - Initializing download for file TC_structure.dat (Index: 5890)
+2025-03-05 12:02:11,873 - INFO - Downloaded: TC_structure.dat (Index: 5890)
+2025-03-05 12:02:11,873 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:02:12,251 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:02:12,255 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:02:12,429 - INFO - Downloaded: TickData_structure.dat (Index: 5891)
+2025-03-05 12:02:12,429 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:02:12,793 - INFO - Downloaded: TC.txt (Index: 5891)
+2025-03-05 12:02:12,793 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:02:12,970 - INFO - Downloaded: TC_structure.dat (Index: 5891)
+2025-03-05 12:06:45,070 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:06:45,262 - INFO - Downloaded: WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:06:45,262 - INFO - Initializing download for file TickData_structure.dat (Index: 5892)
+2025-03-05 12:06:45,755 - INFO - Downloaded: TickData_structure.dat (Index: 5892)
+2025-03-05 12:06:45,755 - INFO - Initializing download for file TC.txt (Index: 5892)
+2025-03-05 12:06:46,314 - INFO - Downloaded: TC.txt (Index: 5892)
+2025-03-05 12:06:46,315 - INFO - Initializing download for file TC_structure.dat (Index: 5892)
+2025-03-05 12:06:46,441 - INFO - Downloaded: TC_structure.dat (Index: 5892)
+2025-03-05 12:08:28,152 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:08:28,153 - INFO - File WEBPXTICK_DT.zip (Index: 5892) already exists.
+2025-03-05 12:08:28,153 - INFO - Initializing download for file TickData_structure.dat (Index: 5892)
+2025-03-05 12:08:28,154 - INFO - File TickData_structure.dat (Index: 5892) already exists.
+2025-03-05 12:08:28,154 - INFO - Initializing download for file TC.txt (Index: 5892)
+2025-03-05 12:08:28,155 - INFO - File TC.txt (Index: 5892) already exists.
+2025-03-05 12:08:28,155 - INFO - Initializing download for file TC_structure.dat (Index: 5892)
+2025-03-05 12:08:28,156 - INFO - File TC_structure.dat (Index: 5892) already exists.
+2025-03-05 12:08:41,584 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:08:41,584 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:08:41,584 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:08:41,584 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:08:41,584 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:08:41,584 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:08:41,593 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:08:41,593 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:11:56,498 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:11:56,499 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:11:56,499 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:11:56,501 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:11:56,501 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:11:56,501 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:11:56,501 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:11:56,501 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:12:01,575 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:12:01,590 - INFO - File WEBPXTICK_DT.zip (Index: 5892) already exists.
+2025-03-05 12:12:01,590 - INFO - Initializing download for file TickData_structure.dat (Index: 5892)
+2025-03-05 12:12:01,590 - INFO - File TickData_structure.dat (Index: 5892) already exists.
+2025-03-05 12:12:01,590 - INFO - Initializing download for file TC.txt (Index: 5892)
+2025-03-05 12:12:01,590 - INFO - File TC.txt (Index: 5892) already exists.
+2025-03-05 12:12:01,590 - INFO - Initializing download for file TC_structure.dat (Index: 5892)
+2025-03-05 12:12:01,590 - INFO - File TC_structure.dat (Index: 5892) already exists.
+2025-03-05 12:18:17,471 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:18:17,471 - INFO - File WEBPXTICK_DT.zip (Index: 5892) already exists.
+2025-03-05 12:18:17,471 - INFO - Initializing download for file TickData_structure.dat (Index: 5892)
+2025-03-05 12:18:17,471 - INFO - File TickData_structure.dat (Index: 5892) already exists.
+2025-03-05 12:18:17,471 - INFO - Initializing download for file TC.txt (Index: 5892)
+2025-03-05 12:18:17,471 - INFO - File TC.txt (Index: 5892) already exists.
+2025-03-05 12:18:17,471 - INFO - Initializing download for file TC_structure.dat (Index: 5892)
+2025-03-05 12:18:17,471 - INFO - File TC_structure.dat (Index: 5892) already exists.
+2025-03-05 12:18:25,412 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:18:25,412 - INFO - File WEBPXTICK_DT.zip (Index: 5892) already exists.
+2025-03-05 12:18:25,412 - INFO - Initializing download for file TickData_structure.dat (Index: 5892)
+2025-03-05 12:18:25,412 - INFO - File TickData_structure.dat (Index: 5892) already exists.
+2025-03-05 12:18:25,415 - INFO - Initializing download for file TC.txt (Index: 5892)
+2025-03-05 12:18:25,415 - INFO - File TC.txt (Index: 5892) already exists.
+2025-03-05 12:18:25,415 - INFO - Initializing download for file TC_structure.dat (Index: 5892)
+2025-03-05 12:18:25,416 - INFO - File TC_structure.dat (Index: 5892) already exists.
+2025-03-05 12:18:33,064 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:18:33,064 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:18:33,064 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:18:33,064 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:18:33,066 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:18:33,066 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:18:33,066 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:18:33,068 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:18:36,722 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5892)
+2025-03-05 12:18:36,722 - INFO - File WEBPXTICK_DT.zip (Index: 5892) already exists.
+2025-03-05 12:18:36,722 - INFO - Initializing download for file TickData_structure.dat (Index: 5892)
+2025-03-05 12:18:36,722 - INFO - File TickData_structure.dat (Index: 5892) already exists.
+2025-03-05 12:18:36,727 - INFO - Initializing download for file TC.txt (Index: 5892)
+2025-03-05 12:18:36,727 - INFO - File TC.txt (Index: 5892) already exists.
+2025-03-05 12:18:36,727 - INFO - Initializing download for file TC_structure.dat (Index: 5892)
+2025-03-05 12:18:36,727 - INFO - File TC_structure.dat (Index: 5892) already exists.
+2025-03-05 12:19:30,607 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:19:30,607 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:19:30,609 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:19:30,609 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:19:30,609 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:19:30,609 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:19:30,609 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:19:30,612 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:20:23,917 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:20:23,917 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:20:23,917 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:20:23,917 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:20:23,922 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:20:23,922 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:20:23,922 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:20:23,923 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:20:44,388 - ERROR - Invalid date format: 2025-03-05 12:20:44.388270. Must follow YYYY-MM-DD.
+2025-03-05 12:24:16,538 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:24:16,538 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:24:16,538 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:24:16,538 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:24:16,538 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:24:16,538 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:24:16,538 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:24:16,545 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:24:22,937 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:24:22,937 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:24:22,937 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:24:22,939 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:24:22,939 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:24:22,940 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:24:22,940 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:24:22,942 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:24:28,318 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:24:28,318 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:24:28,318 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:24:28,318 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:24:28,318 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:24:28,322 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:24:28,322 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:24:28,322 - INFO - File TC_structure.dat (Index: 5891) already exists.
+2025-03-05 12:24:59,475 - ERROR - Invalid date format: fieg. Must follow YYYY-MM-DD.
+2025-03-05 12:25:11,131 - ERROR - Invalid file(s): f, e, a, w, f. Available files: WEBPXTICK_DT.zip, TickData_structure.dat, TC.txt, TC_structure.dat.
+2025-03-05 12:28:09,047 - ERROR - Invalid file(s): feawf. Available files: WEBPXTICK_DT.zip, TickData_structure.dat, TC.txt, TC_structure.dat
+2025-03-05 12:29:07,008 - INFO - Initializing download for file TickData_structure.dat (Index: 5889)
+2025-03-05 12:29:07,008 - INFO - File TickData_structure.dat (Index: 5889) already exists.
+2025-03-05 12:29:07,008 - INFO - Initializing download for file TickData_structure.dat (Index: 5890)
+2025-03-05 12:29:07,008 - INFO - File TickData_structure.dat (Index: 5890) already exists.
+2025-03-05 12:29:07,008 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:29:07,008 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:29:33,556 - INFO - Initializing download for file WEBPXTICK_DT.zip (Index: 5891)
+2025-03-05 12:29:33,556 - INFO - File WEBPXTICK_DT.zip (Index: 5891) already exists.
+2025-03-05 12:29:33,556 - INFO - Initializing download for file TickData_structure.dat (Index: 5891)
+2025-03-05 12:29:33,562 - INFO - File TickData_structure.dat (Index: 5891) already exists.
+2025-03-05 12:29:33,562 - INFO - Initializing download for file TC.txt (Index: 5891)
+2025-03-05 12:29:33,562 - INFO - File TC.txt (Index: 5891) already exists.
+2025-03-05 12:29:33,563 - INFO - Initializing download for file TC_structure.dat (Index: 5891)
+2025-03-05 12:29:33,563 - INFO - File TC_structure.dat (Index: 5891) already exists.

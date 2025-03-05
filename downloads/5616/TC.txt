@@ -1,0 +1,4 @@
+Commodity	Contract_Type	Delivery_Month	Delivery_Year	Strike_Price	Business_Date	Match_Time	Price_Indicator	Price	Message_Code	Amend_Code	Volume
+ZTTM	F	G	2024	0000000	20240214	141843	 	0000090895	Y	D	00028
+ZTTM	F	G	2024	0000000	20240214	141843	 	0000090895	Y	D	00028
+ZTTM	F	G	2024	0000000	20240214	141843	 	0000090895	Y	D	00028
