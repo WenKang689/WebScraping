@@ -1,3 +1,0 @@
-Commodity	Contract_Type	Delivery_Month	Delivery_Year	Strike_Price	Business_Date	Match_Time	Price_Indicator	Price	Message_Code	Amend_Code	Volume
-FEF	F	G	2024	0000000	20240202	161100	 	0000012840	Y	D	00050
-FEF	F	H	2024	0000000	20240202	161200	 	0000012680	Y	D	00050

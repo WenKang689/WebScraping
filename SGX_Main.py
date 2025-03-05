@@ -6,6 +6,7 @@ import requests
 from datetime import datetime, timedelta
 import time
 import sys
+import schedule
 
 #Load configurations in config.ini
 config_file = "config.ini"
@@ -22,6 +23,7 @@ base_date = datetime.strptime(config.get("Settings", "base_date", fallback = "20
 base_index = int(config.get("Settings","base_index",fallback = "4803"))
 files = ["WEBPXTICK_DT.zip","TickData_structure.dat","TC.txt","TC_structure.dat"]
 failed_download_log = "Failed_Download.log"
+schedule_time = config.get("Settings","schedule_time")
 
 #Ensure the folder is created
 os.makedirs(dir, exist_ok=True)
@@ -38,10 +40,17 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.INFO)
 logging.getLogger().addHandler(handler)
 
-def get_date_range(arg):
+def get_date_range(arg=None):
+    if arg is None:
+        return [datetime.today()]
+
+def get_date_range(arg = None):
     # Validate and calculate date range for download
     dates = []
     today = datetime.today()
+
+    if arg is None:
+        return [validate_date(str(today.date()))]
 
     if arg.date and (arg.start or arg.end):
         logging.error("Cannot use --date with --start or --end. You must specify one of: --date, --start, or --start with --end.")
@@ -123,24 +132,31 @@ def dwl_data(indices,file_name):
         for file in file_name:
             logging.info(f"Initializing download for file {file} (Index: {index})")
             base_url = f"{link}{index}/{file}"
-            path = get_save_path(index)
-            save_path = os.path.join(path,file)
 
-            if os.path.exists(save_path):
-                logging.info(f"File {file} (Index: {index}) already exists.")
-                continue
 
             try:
                 response = requests.get(base_url)
                 if response.status_code == 200:
+                    if check_html(response.content):
+                        logging.warning(f"Error page returned from SGX for file {file} (Index: {index})")
+                        failed_dwl.append((index,file))
+                        continue
+
+                    path = get_save_path(index)
+                    save_path = os.path.join(path,file)
+
+                    if os.path.exists(save_path):
+                        logging.info(f"File {file} (Index: {index}) already exists.")
+                        continue
+
                     with open(save_path,"wb") as w:
                         w.write(response.content)
                     logging.info(f"Downloaded: {os.path.basename(file)} (Index: {index})")
                 else:
-                    failed_dwl.append((index,file,1))
+                    failed_dwl.append((index,file))
                     logging.warning(f"Failed downloading for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
             except requests.RequestException as e:
-                failed_dwl.append((index,file,1))
+                failed_dwl.append((index,file))
                 logging.error(f"Error downloading {file} for index {index}: {e}")
     
     if failed_dwl:
@@ -152,21 +168,22 @@ def get_save_path(index):
     os.makedirs(index_folder, exist_ok=True)
     return index_folder
 
+#Check if the downloaded content is an HTML error page.
+def check_html(content):
+    error = content.strip().startswith(b"<!DOCTYPE html") or b"No Record Found" in content
+    return error
+
 def dwl_retry(failed_dwl):
-    logging.info(f"Retrying failed download(s)")
-    while failed_dwl:
-        logging.info(f"Waiting {retry_cooldown} hours before retrying failed downloads.")
-        time.sleep(retry_cooldown * 3600)
+    for attempt in range(1, max_retry + 1):
+        if not failed_dwl:
+            return
+
+        logging.info(f"Waiting {retry_cooldown} minutes before retrying failed downloads.")
+        time.sleep(retry_cooldown * 60)
 
         buffer_queue = []
 
-        for index,file,attempt in failed_dwl:
-            if attempt > max_retry:
-                logging.error(f"Max retry attempts reached for {file} (Index {index})")
-                with open(failed_download_log,"a") as fail_log:
-                    fail_log.write(f"{datetime.now()} - Failed Download for {attempt} attempt: {file} (Index: {index})\n")
-                continue
-
+        for index,file in failed_dwl:
             logging.info(f"Retrying download attempt {attempt} for {file} (Index: {index})")
             base_url = f"{link}{index}/{file}"
             path = get_save_path(index)
@@ -175,30 +192,55 @@ def dwl_retry(failed_dwl):
             try:
                 response = requests.get(base_url)
                 if response.status_code == 200:
+                    if check_html(response.content):
+                        logging.warning(f"Error page returned from SGX for file {file} (Index: {index})")
+                        buffer_queue.append((index,file))
+                        continue
+
                     with open(save_path, "wb") as w:
                         w.write(response.content)
                     logging.info(f"Download retry successful: {os.path.basename(file)} (Index: {index})")
                 else:
-                    buffer_queue.append((index,file,attempt+1))
+                    buffer_queue.append((index,file))
                     logging.warning(f"Download retry failed for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
             except requests.RequestException as e:
-                buffer_queue.append((index,file,attempt+1))
+                buffer_queue.append((index,file))
                 logging.error(f"Download retry error: {file} for index {index}: {e}")
                 
         failed_dwl = buffer_queue
 
+    for index,file in failed_dwl:
+        logging.error(f"Max retry attempts reached for {file} (Index {index})")
+        with open(failed_download_log,"a") as fail_log:
+            fail_log.write(f"{datetime.now()} - Failed Download for {attempt} attempt: {file} (Index: {index})\n")
+
+def scheduled_task():
+    logging.info("Starting scheduled download task...")
+    dates = get_date_range()
+    indices = index_calc(dates)
+    dwl_data(indices, files)
+
+# Schedule the task
+schedule.every().day.at(schedule_time).do(scheduled_task)
+
 #---Main---
+if __name__ == "__main__":
+    #Parsing argument for manual intervention
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument("--date", type=str)
+    arg_parser.add_argument("--start", type=str)
+    arg_parser.add_argument("--end", type=str)
+    arg_parser.add_argument("--file", nargs="+")
+    arg = arg_parser.parse_args()
 
-#Parsing argument for manual intervention
-arg_parser = argparse.ArgumentParser()
-arg_parser.add_argument("--date", type=str)
-arg_parser.add_argument("--start", type=str)
-arg_parser.add_argument("--end", type=str)
-arg_parser.add_argument("--file", nargs="+")
-
-arg = arg_parser.parse_args()
-
-dates = get_date_range(arg)
-file = validate_file(arg)
-indices = index_calc(dates)
-dwl_data(indices,file)
+    if any([arg.date, arg.start, arg.end, arg.file]):
+        logging.info("Manual execution:")
+        dates = get_date_range(arg)
+        file = validate_file(arg)
+        indices = index_calc(dates)
+        dwl_data(indices,file)
+    else:
+        logging.info(f"Running in scheduled mode. Scheduled time: {schedule_time}")
+        while True:
+            schedule.run_pending()
+            time.sleep(60)
