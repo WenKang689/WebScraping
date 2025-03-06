@@ -1,0 +1,9 @@
+2025-03-06 22:19:25,340 - INFO - START: Manual execution:
+2025-03-06 22:19:25,341 - INFO - REQUEST: Initializing download for file WEBPXTICK_DT.zip (Index: 5889)
+2025-03-06 22:19:29,943 - INFO - SUCCESS: Downloaded: WEBPXTICK_DT.zip (Index: 5889)
+2025-03-06 22:19:29,943 - INFO - REQUEST: Initializing download for file TickData_structure.dat (Index: 5889)
+2025-03-06 22:19:30,637 - INFO - SUCCESS: Downloaded: TickData_structure.dat (Index: 5889)
+2025-03-06 22:19:30,637 - INFO - REQUEST: Initializing download for file TC.txt (Index: 5889)
+2025-03-06 22:19:30,694 - INFO - SUCCESS: Downloaded: TC.txt (Index: 5889)
+2025-03-06 22:19:30,694 - INFO - REQUEST: Initializing download for file TC_structure.dat (Index: 5889)
+2025-03-06 22:19:30,791 - INFO - SUCCESS: Downloaded: TC_structure.dat (Index: 5889)

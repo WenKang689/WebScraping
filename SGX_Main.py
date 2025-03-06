@@ -257,10 +257,6 @@ if __name__ == "__main__":
             schedule_time = c_schedule
         else:
             schedule_time = arg.schedule
-    else:
-        schedule_time = None
-
-    if schedule_time:
         print("\n")
         logging.info(f"START: Running in scheduled mode. Scheduled time: {schedule_time}")
         print("\n")
@@ -270,8 +266,7 @@ if __name__ == "__main__":
         while True:
             schedule.run_pending()
             time.sleep(60)
-
-    if any([arg.date, arg.start, arg.end, arg.file]):
+    else:
         print("\n")
         logging.info("START: Manual execution:")
         print("\n")
@@ -279,4 +274,3 @@ if __name__ == "__main__":
         file = validate_file(arg)
         indices = index_calc(dates)
         dwl_data(indices,file)
-
