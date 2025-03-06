@@ -40,10 +40,6 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.INFO)
 logging.getLogger().addHandler(handler)
 
-def get_date_range(arg=None):
-    if arg is None:
-        return [datetime.today()]
-
 def get_date_range(arg = None):
     # Validate and calculate date range for download
     dates = []
@@ -53,14 +49,15 @@ def get_date_range(arg = None):
         return [validate_date(str(today.date()))]
 
     if arg.date and (arg.start or arg.end):
-        logging.error("Cannot use --date with --start or --end. You must specify one of: --date, --start, or --start with --end.")
+        logging.warning("INPUT WARNING: Cannot use --date with --start or --end. You must specify one of: --date, --start, or --start with --end.")
         sys.exit(1)
 
     if arg.start and arg.end:
         start_date = validate_date(arg.start)
         end_date = validate_date(arg.end)
         if start_date > end_date:
-            logging.error("--start date cannot be later than --end date.")
+            logging.warning("INPUT WARNING: --start date cannot be later than --end date.")
+            print("\n")
             sys.exit(1)
         for i in range((end_date - start_date).days + 1):
             dates.append(start_date + timedelta(days=i))
@@ -81,7 +78,8 @@ def validate_date(date):
     try:
         return datetime.strptime(date, "%Y-%m-%d")
     except ValueError:
-        logging.error(f"Invalid date format: {date}. Must follow YYYY-MM-DD.")
+        logging.warning(f"INPUT WARNING: Invalid date format: {date}. Must follow YYYY-MM-DD.")
+        print("\n")
         sys.exit(1)
 
 #Validate file name
@@ -92,7 +90,8 @@ def validate_file(arg):
             if i not in files:
                 invalid.append(i)
         if invalid:
-            logging.error(f"Invalid file(s): {', '.join(invalid)}. Available files: {', '.join(files)}")
+            logging.warning(f"INPUT WARNING: Invalid file(s): {', '.join(invalid)}. Available files: {', '.join(files)}")
+            print("\n")
             sys.exit(1)
         return arg.file
     return files
@@ -105,15 +104,18 @@ def index_calc(dates):
     index_list = []
     for date in dates:
         if date < base_date:
-            logging.info(f"{date.strftime('%Y-%m-%d')} is before base date {base_date.strftime('%Y-%m-%d')}.")
+            logging.warning(f"INPUT WARNING: {date.strftime('%Y-%m-%d')} is before base date {base_date.strftime('%Y-%m-%d')}.")
+            print("\n")
             continue
 
         if date.date() > datetime.today().date():
-            logging.info(f"{date.strftime('%Y-%m-%d')} is after today's date {datetime.today().strftime('%Y-%m-%d')}.")
+            logging.warning(f"INPUT WARNING: {date.strftime('%Y-%m-%d')} is after today's date {datetime.today().strftime('%Y-%m-%d')}.")
+            print("\n")
             continue
 
         if date.weekday() >= 5:  # Saturday (5) or Sunday (6)
-            logging.info(f"No data available for weekends: {date.strftime('%Y-%m-%d')}.")
+            logging.warning(f"INPUT WARNING: No data available for weekends: {date.strftime('%Y-%m-%d')}.")
+            print("\n")
             continue
         
         while date_now < date:
@@ -130,15 +132,16 @@ def dwl_data(indices,file_name):
 
     for index in indices:
         for file in file_name:
-            logging.info(f"Initializing download for file {file} (Index: {index})")
+            logging.info(f"REQUEST: Initializing download for file {file} (Index: {index})")
+            print("\n")
             base_url = f"{link}{index}/{file}"
-
 
             try:
                 response = requests.get(base_url)
                 if response.status_code == 200:
                     if check_html(response.content):
-                        logging.warning(f"Error page returned from SGX for file {file} (Index: {index})")
+                        logging.error(f"REQUEST ERROR: Error page returned from SGX for file {file} (Index: {index})")
+                        print("\n")
                         failed_dwl.append((index,file))
                         continue
 
@@ -146,18 +149,23 @@ def dwl_data(indices,file_name):
                     save_path = os.path.join(path,file)
 
                     if os.path.exists(save_path):
-                        logging.info(f"File {file} (Index: {index}) already exists.")
+                        logging.error(f"FILE ERROR: File {file} (Index: {index}) already exists.")
+                        print("\n")
                         continue
 
                     with open(save_path,"wb") as w:
                         w.write(response.content)
-                    logging.info(f"Downloaded: {os.path.basename(file)} (Index: {index})")
+                    logging.info(f"SUCCESS: Downloaded: {os.path.basename(file)} (Index: {index})")
+                    print("\n")
                 else:
                     failed_dwl.append((index,file))
-                    logging.warning(f"Failed downloading for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
+                    logging.error(f"REQUEST ERROR: Failed downloading for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
+                    print("\n")
             except requests.RequestException as e:
                 failed_dwl.append((index,file))
-                logging.error(f"Error downloading {file} for index {index}: {e}")
+                logging.error(f"REQUEST ERROR: Error downloading {file} for index {index}: {e}")
+                print("\n")
+        print("---------------------------\n")
     
     if failed_dwl:
         dwl_retry(failed_dwl)
@@ -178,44 +186,54 @@ def dwl_retry(failed_dwl):
         if not failed_dwl:
             return
 
-        logging.info(f"Waiting {retry_cooldown} minutes before retrying failed downloads.")
+        logging.info(f"PENDING: Waiting {retry_cooldown} minutes before retrying failed downloads.")
+        print("\n")
         time.sleep(retry_cooldown * 60)
 
         buffer_queue = []
 
         for index,file in failed_dwl:
-            logging.info(f"Retrying download attempt {attempt} for {file} (Index: {index})")
+            logging.info(f"REQUEST: Retrying download attempt {attempt} for {file} (Index: {index})")
+            print("\n")
             base_url = f"{link}{index}/{file}"
-            path = get_save_path(index)
-            save_path = os.path.join(path,file)
 
             try:
                 response = requests.get(base_url)
                 if response.status_code == 200:
                     if check_html(response.content):
-                        logging.warning(f"Error page returned from SGX for file {file} (Index: {index})")
+                        logging.error(f"REQUEST ERROR: Error page returned from SGX for file {file} (Index: {index})")
+                        print("\n")
                         buffer_queue.append((index,file))
                         continue
 
+                    path = get_save_path(index)
+                    save_path = os.path.join(path,file)
+
                     with open(save_path, "wb") as w:
                         w.write(response.content)
-                    logging.info(f"Download retry successful: {os.path.basename(file)} (Index: {index})")
+                    logging.info(f"SUCCESS: Download retry successful: {os.path.basename(file)} (Index: {index})")
+                    print("\n")
                 else:
                     buffer_queue.append((index,file))
-                    logging.warning(f"Download retry failed for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
+                    logging.error(f"REQUEST ERROR: Download retry failed for {os.path.basename(file)} (Index: {index}). HTTP {response.status_code}")
+                    print("\n")
             except requests.RequestException as e:
                 buffer_queue.append((index,file))
-                logging.error(f"Download retry error: {file} for index {index}: {e}")
+                logging.error(f"REQUEST ERROR: Download retry error: {file} for index {index}: {e}")
+                print("\n")
                 
+        print("---------------------------\n")
         failed_dwl = buffer_queue
 
     for index,file in failed_dwl:
-        logging.error(f"Max retry attempts reached for {file} (Index {index})")
+        logging.info(f"FAILED: Max retry attempts reached for {file} (Index {index})")
+        print("\n")
         with open(failed_download_log,"a") as fail_log:
             fail_log.write(f"{datetime.now()} - Failed Download for {attempt} attempt: {file} (Index: {index})\n")
 
 def scheduled_task():
-    logging.info("Starting scheduled download task...")
+    logging.info("START: Starting scheduled download task...")
+    print("\n")
     dates = get_date_range()
     indices = index_calc(dates)
     dwl_data(indices, files)
@@ -234,13 +252,17 @@ if __name__ == "__main__":
     arg = arg_parser.parse_args()
 
     if any([arg.date, arg.start, arg.end, arg.file]):
-        logging.info("Manual execution:")
+        print("\n")
+        logging.info("START: Manual execution:")
+        print("\n")
         dates = get_date_range(arg)
         file = validate_file(arg)
         indices = index_calc(dates)
         dwl_data(indices,file)
     else:
-        logging.info(f"Running in scheduled mode. Scheduled time: {schedule_time}")
+        print("\n")
+        logging.info(f"START: Running in scheduled mode. Scheduled time: {schedule_time}")
+        print("\n")
         while True:
             schedule.run_pending()
             time.sleep(60)
