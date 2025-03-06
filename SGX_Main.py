@@ -15,15 +15,15 @@ config.read(config_file)
 
 #Read settings from config.ini
 dir = config.get("Settings", "download_directory", fallback = "./downloads")
-link = config.get("Settings","SGX_URL",fallback="https://links.sgx.com/1.0.0/derivatives-historical/")
+link = config.get("Settings","SGX_URL", fallback="https://links.sgx.com/1.0.0/derivatives-historical/")
 log_file = config.get("Settings", "log_file", fallback = "download.log")
 retry_cooldown = config.getint("Settings", "retry_cooldown", fallback = 3)
 max_retry = config.getint("Settings", "max_retries", fallback=3)
 base_date = datetime.strptime(config.get("Settings", "base_date", fallback = "2021-01-01"),"%Y-%m-%d")
-base_index = int(config.get("Settings","base_index",fallback = "4803"))
+base_index = int(config.get("Settings","base_index", fallback = "4803"))
 files = ["WEBPXTICK_DT.zip","TickData_structure.dat","TC.txt","TC_structure.dat"]
 failed_download_log = "Failed_Download.log"
-schedule_time = config.get("Settings","schedule_time")
+c_schedule = config.get("Settings","schedule_time", fallback = "23:00")
 
 #Ensure the folder is created
 os.makedirs(dir, exist_ok=True)
@@ -40,36 +40,35 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.INFO)
 logging.getLogger().addHandler(handler)
 
-def get_date_range(arg = None):
+def get_date_range(arg=None):
     # Validate and calculate date range for download
     dates = []
     today = datetime.today()
 
-    if arg is None:
-        return [validate_date(str(today.date()))]
-
-    if arg.date and (arg.start or arg.end):
-        logging.warning("INPUT WARNING: Cannot use --date with --start or --end. You must specify one of: --date, --start, or --start with --end.")
-        sys.exit(1)
-
-    if arg.start and arg.end:
-        start_date = validate_date(arg.start)
-        end_date = validate_date(arg.end)
-        if start_date > end_date:
-            logging.warning("INPUT WARNING: --start date cannot be later than --end date.")
-            print("\n")
+    if arg:
+        if arg.date and (arg.start or arg.end):
+            logging.warning("INPUT WARNING: Cannot use --date with --start or --end. You must specify one of: --date, --start, or --start with --end.")
             sys.exit(1)
-        for i in range((end_date - start_date).days + 1):
-            dates.append(start_date + timedelta(days=i))
-    elif arg.start:
-        start_date = validate_date(arg.start)
-        for i in range((today - start_date).days + 1):
-            dates.append(start_date + timedelta(days=i))
-    elif arg.date:
-        dates.append(validate_date(arg.date))
-    else:
-        dates.append(validate_date(str(today.date())))  # Extract only the date part
 
+        if arg.start and arg.end:
+            start_date = validate_date(arg.start)
+            end_date = validate_date(arg.end)
+            if start_date > end_date:
+                logging.warning("INPUT WARNING: --start date cannot be later than --end date.")
+                print("\n")
+                sys.exit(1)
+            for i in range((end_date - start_date).days + 1):
+                dates.append(start_date + timedelta(days=i))
+        elif arg.start:
+            start_date = validate_date(arg.start)
+            for i in range((today - start_date).days + 1):
+                dates.append(start_date + timedelta(days=i))
+        elif arg.date:
+            dates.append(validate_date(arg.date))
+        else:
+            dates.append(validate_date(str(today.date())))
+    else:
+        dates.append(validate_date(str(today.date())))
 
     return dates
 
@@ -100,8 +99,8 @@ def validate_file(arg):
 def index_calc(dates):
     date_now = base_date
     index_now = base_index
-
     index_list = []
+
     for date in dates:
         if date < base_date:
             logging.warning(f"INPUT WARNING: {date.strftime('%Y-%m-%d')} is before base date {base_date.strftime('%Y-%m-%d')}.")
@@ -181,6 +180,7 @@ def check_html(content):
     error = content.strip().startswith(b"<!DOCTYPE html") or b"No Record Found" in content
     return error
 
+#Retry download if there are failed download files
 def dwl_retry(failed_dwl):
     for attempt in range(1, max_retry + 1):
         if not failed_dwl:
@@ -231,15 +231,13 @@ def dwl_retry(failed_dwl):
         with open(failed_download_log,"a") as fail_log:
             fail_log.write(f"{datetime.now()} - Failed Download for {attempt} attempt: {file} (Index: {index})\n")
 
+#Run the download task when scheduled time 
 def scheduled_task():
     logging.info("START: Starting scheduled download task...")
     print("\n")
     dates = get_date_range()
     indices = index_calc(dates)
     dwl_data(indices, files)
-
-# Schedule the task
-schedule.every().day.at(schedule_time).do(scheduled_task)
 
 #---Main---
 if __name__ == "__main__":
@@ -249,7 +247,29 @@ if __name__ == "__main__":
     arg_parser.add_argument("--start", type=str)
     arg_parser.add_argument("--end", type=str)
     arg_parser.add_argument("--file", nargs="+")
+    arg_parser.add_argument("--schedule", nargs="?", const="default", type=str)
     arg = arg_parser.parse_args()
+
+    #Check if schedule argument filled with time or not
+    if arg.schedule:
+        if arg.schedule == "default":
+            #Set schedule time as default in configuration file if no value
+            schedule_time = c_schedule
+        else:
+            schedule_time = arg.schedule
+    else:
+        schedule_time = None
+
+    if schedule_time:
+        print("\n")
+        logging.info(f"START: Running in scheduled mode. Scheduled time: {schedule_time}")
+        print("\n")
+
+        schedule.every().day.at(schedule_time).do(scheduled_task)
+
+        while True:
+            schedule.run_pending()
+            time.sleep(60)
 
     if any([arg.date, arg.start, arg.end, arg.file]):
         print("\n")
@@ -259,10 +279,4 @@ if __name__ == "__main__":
         file = validate_file(arg)
         indices = index_calc(dates)
         dwl_data(indices,file)
-    else:
-        print("\n")
-        logging.info(f"START: Running in scheduled mode. Scheduled time: {schedule_time}")
-        print("\n")
-        while True:
-            schedule.run_pending()
-            time.sleep(60)
+
